@@ -144,8 +144,6 @@ header li {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1em;
   padding: 1.5em 1em;
-  margin-top: 60px;
-  padding-bottom: 120px;
 }
 
 
@@ -155,10 +153,18 @@ header li {
     color: var(--txt-color-primary);
     margin-bottom: 1.25em;
     padding: 0 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#article-listing a:hover {
+    text-decoration: underline;
 }
 
 #article-listing p {
     margin: 2em 0 1em 0;
+    
 }
 
 .article {
@@ -211,10 +217,9 @@ footer p {
 #selected-article {
     display: flex;
     flex-direction: column;
-    padding: 2em 1.5em;
+    padding: 2em 1.5em 12px 1.5em;
     gap: 1.5em;
     margin-top: 60px;
-    padding-bottom: 20px;
 }
 
 #selected-article h2 {
@@ -277,7 +282,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 120px;
 }
 
 @media (min-width: 450px) {
@@ -316,7 +321,7 @@ footer p {
     }
     .article img {
         object-position: 10% 60%;
-        height: 600px;
+        height: 300px;
     }
     #selected-article img {
         object-position: 50% 60%;
